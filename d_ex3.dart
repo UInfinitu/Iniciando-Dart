@@ -155,7 +155,7 @@ Future<void> main() async {
   final resultado = await service.sincronizar(validos);
 
   // Switch para mostrar mensagem final
-  switch (resultado > 0) {
+  switch (resultado! > 0) {
     case true:
       print('Total de produtos sincronizados com sucesso: $resultado');
       break;
